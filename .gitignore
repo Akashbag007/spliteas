@@ -1,30 +1,91 @@
-# Node modules
+# ================================
+# Node.js dependencies
+# ================================
 node_modules/
 client/node_modules/
 server/node_modules/
 
-# Environment files
+
+# ================================
+# Environment / Secrets
+# ================================
 .env
 .env.local
 .env.*.local
-server/.env
 
-# Build outputs
+server/.env
+client/.env
+client/.env.local
+
+
+# ================================
+# Build / Production files
+# ================================
 client/dist/
 client/build/
+server/dist/
+server/build/
 
-# Uploaded receipts / files in dev
+
+# ================================
+# Uploaded files / receipts
+# Keep only .gitkeep
+# ================================
 server/uploads/*
 !server/uploads/.gitkeep
 
-# Logs & Debug
+
+# ================================
+# Logs
+# ================================
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log
 
-# OS specific files
+
+# ================================
+# OS generated files
+# ================================
 .DS_Store
 Thumbs.db
 desktop.ini
-*.log
+
+
+# ================================
+# Editor / IDE
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+# ================================
+# Temporary files
+# ================================
+*.tmp
+*.temp
+.cache/
+
+
+# ================================
+# Coverage
+# ================================
+coverage/
+.nyc_output/
+
+
+# ================================
+# Vite
+# ================================
+.vite/
+
+
+# ================================
+# Optional: local database files
+# ================================
+*.sqlite
+*.sqlite3
